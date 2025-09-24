@@ -1,2 +1,1 @@
-# fund_manager_workshop
-# fund_manager_workshop
+# 🤖 Agentic AI 펀드 매니저
