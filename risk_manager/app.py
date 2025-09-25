@@ -184,7 +184,7 @@ def display_risk_analysis_result(container, analysis_content):
                             textinfo='label+percent'
                         )])
                         fig.update_layout(height=400, title=f"시나리오 {i} 포트폴리오")
-                        st.plotly_chart(fig, width='stretch')
+                        st.plotly_chart(fig, config={'displayModeBar': False})
                 
                 with col2:
                     st.markdown("**조정 이유 및 전략**")
