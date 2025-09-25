@@ -131,7 +131,7 @@ def display_correlation_analysis(container, correlation_data):
             )
             
             fig.update_traces(texttemplate="%{z:.2f}", textfont_size=12)
-            container.plotly_chart(fig, width='stretch')
+            container.plotly_chart(fig, config={'displayModeBar': False})
             
             # 상관관계 해석
             container.markdown("**상관관계 해석**")
@@ -201,7 +201,7 @@ def display_etf_analysis_result(container, etf_data):
                 showlegend=False
             )
             
-            container.plotly_chart(fig, width='stretch')
+            container.plotly_chart(fig, config={'displayModeBar': False})
         
     except Exception as e:
         container.error(f"ETF 분석 결과 표시 오류: {e}")
