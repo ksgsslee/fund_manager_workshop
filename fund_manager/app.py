@@ -135,7 +135,7 @@ def display_etf_analysis_result(container, etf_data):
                 showlegend=False
             )
             
-            container.plotly_chart(fig, width='stretch')
+            container.plotly_chart(fig, config={'displayModeBar': False})
         
     except Exception as e:
         container.error(f"ETF 분석 결과 표시 오류: {e}")
@@ -170,7 +170,7 @@ def display_correlation_analysis(container, correlation_data):
             )
             
             fig.update_traces(texttemplate="%{z:.2f}", textfont_size=12)
-            container.plotly_chart(fig, width='stretch')
+            container.plotly_chart(fig, config={'displayModeBar': False})
             
             container.markdown("**상관관계 해석**")
             container.info("""
@@ -384,7 +384,7 @@ def display_risk_analysis_result(container, analysis_content):
                             textinfo='label+percent'
                         )])
                         fig.update_layout(height=400, title=f"시나리오 {i} 포트폴리오")
-                        st.plotly_chart(fig, width='stretch')
+                        st.plotly_chart(fig, config={'displayModeBar': False})
                 
                 with col2:
                     st.markdown("**조정 이유 및 전략**")
