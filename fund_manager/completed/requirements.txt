@@ -1,0 +1,14 @@
+# requirements.txt
+# Fund Manager AgentCore Runtime 의존성
+
+# Langgraph
+langgraph
+
+# AI 에이전트 프레임워크
+strands-agents
+
+# AWS Bedrock AgentCore (Runtime + Memory)
+bedrock-agentcore
+
+# AWS SDK
+boto3
