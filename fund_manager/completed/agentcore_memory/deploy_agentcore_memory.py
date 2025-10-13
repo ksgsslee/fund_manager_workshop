@@ -12,7 +12,7 @@ from pathlib import Path
 from bedrock_agentcore.memory import MemoryClient
 
 # 공통 설정 경로 추가
-root_path = Path(__file__).parent.parent.parent
+root_path = Path(__file__).parent.parent.parent.parent
 sys.path.insert(0, str(root_path))
 from config import Config as GlobalConfig
 

@@ -111,6 +111,7 @@ def create_gateway_runtime(role_arn, auth_components, lambda_arn):
     
     # Gateway 생성
     gateway = create_gateway(Config.GATEWAY_NAME, role_arn, auth_components, Config.REGION)
+    time.sleep(10)
     
     # Gateway Target 생성 (Lambda 함수를 MCP 도구로 노출)
     target_config = copy.deepcopy(TARGET_CONFIGURATION)

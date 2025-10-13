@@ -601,7 +601,7 @@ def load_current_session_summary():
 # 메뉴별 UI 구성
 if menu == "🤖 새로운 펀드 매니징":
     with st.expander("🏗️ Fund Manager 아키텍처", expanded=True):
-        st.image(os.path.join(STATIC_PATH, "fund_manager.png"))
+        st.image(os.path.join(STATIC_PATH, "fund_manager_v1.0.png"))
 
 
     st.markdown("**투자자 정보 입력**")
