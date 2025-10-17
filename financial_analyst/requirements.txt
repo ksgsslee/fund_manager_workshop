@@ -14,3 +14,4 @@ streamlit
 
 # AWS
 boto3
+aws-opentelemetry-distro

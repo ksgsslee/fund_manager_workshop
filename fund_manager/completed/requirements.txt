@@ -12,3 +12,4 @@ bedrock-agentcore
 
 # AWS SDK
 boto3
+aws-opentelemetry-distro

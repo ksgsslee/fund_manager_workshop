@@ -137,6 +137,15 @@ def create_agentcore_runtime_role(agent_name, region):
                     f"arn:aws:bedrock-agentcore:{region}:{account_id}:workload-identity-directory/default",
                     f"arn:aws:bedrock-agentcore:{region}:{account_id}:workload-identity-directory/default/workload-identity/{agent_name}-*"
                 ]
+            },
+            {
+                "Sid": "MarketplacePermissions",
+                "Effect": "Allow",
+                "Action": [
+                "aws-marketplace:ViewSubscriptions",
+                "aws-marketplace:Subscribe"
+                ],
+                "Resource": "*"
             }
         ]
     }

@@ -18,6 +18,7 @@ plotly
 
 # AWS
 boto3
+aws-opentelemetry-distro
 
 # HTTP Requests
 requests

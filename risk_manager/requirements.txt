@@ -6,3 +6,4 @@ strands-agents
 
 # AWS Bedrock AgentCore Runtime
 bedrock-agentcore
+aws-opentelemetry-distro
