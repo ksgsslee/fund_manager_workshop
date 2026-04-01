@@ -19,7 +19,7 @@ app = BedrockAgentCoreApp()
 
 class Config:
     """Risk Manager 설정"""
-    MODEL_ID = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"  # Claude 3.7 Sonnet
+    MODEL_ID = "us.anthropic.claude-sonnet-4-6"  # Claude 4 Sonnet
     TEMPERATURE = 0.2  # 일관된 리스크 분석
     MAX_TOKENS = 4000
 
